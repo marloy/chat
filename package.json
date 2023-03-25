@@ -1,0 +1,14 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Учебный проект Чат",
+  "scripts": {
+    "dev": "parcel -p 3000 ./static/index.html --open",
+    "build": "parcel build static/index.html"
+  },
+  "author": "Evgeny Novikov",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "2.8.3"
+  }
+}
