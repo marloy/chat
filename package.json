@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Учебный проект Чат",
   "scripts": {
-    "dev": "parcel -p 3000 ./static/index.html --open --no-cache",
+    "start": "parcel -p 3000 ./static/index.html --open --no-cache",
     "build": "parcel build static/index.html"
   },
   "author": "Evgeny Novikov",
