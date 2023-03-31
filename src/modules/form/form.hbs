@@ -1,0 +1,15 @@
+<form class="form {{ wrapperClassName }}" method="post">
+  <div class="form__group">
+    {{#each form.fields}}
+    {{> input }}
+    {{/each}}
+  </div>
+  <div class="form__group">
+    {{#each form.buttons}}
+    {{> button}}
+    {{/each}}
+    {{#if link}}
+    {{> button label=link.label className='button_style_outline' onClick=link.linkTo}}
+    {{/if}}
+  </div>
+</form>

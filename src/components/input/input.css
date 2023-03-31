@@ -1,0 +1,18 @@
+.field {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 1px var(--color-outline);
+  border-radius: 10px;
+  padding: 8px 18px;
+
+  .label {
+    color: var(--color-dark-green);
+  }
+
+  .input {
+    font: inherit;
+    border: 0;
+  }
+}
