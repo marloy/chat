@@ -24,7 +24,7 @@ export const FORMS = {
     },
     link: {
       label: 'Нет аккаунта?',
-      linkTo: 'renderPage(\'signup\')'
+      linkTo: 'renderPage(\'home\')'
     },
   },
   signup: {
@@ -77,7 +77,7 @@ export const FORMS = {
     },
     link: {
       label: 'Войти',
-      linkTo: 'renderPage(\'signin\')'
+      linkTo: 'renderPage(\'home\')'
     }
   }
 }

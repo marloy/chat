@@ -10,9 +10,9 @@
   transition: background-color .2s;
   font: inherit;
   border: 0;
+  padding: 0 30px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: var(--color-green);
   }
 
@@ -21,9 +21,12 @@
     border: 1px solid var(--color-outline);
     color: var(--color-black);
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: var(--color-grey);
     }
+  }
+
+  &_size_small {
+    height: 40px;
   }
 }

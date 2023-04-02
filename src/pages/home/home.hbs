@@ -1,4 +1,10 @@
-<main>
-  <h1>Hello, Olesya!</h1>
-  {{> button onClick="renderPage('signin')" label="Кнопка" className="click" }}
+<main class="fullscreen">
+  <div class="home fullscreen__container">
+    <h1 class="home__title">Выбери страничку</h1>
+    <div class="home__container">
+      {{#each buttons}}
+      {{> button }}
+      {{/each}}
+    </div>
+  </div>
 </main>

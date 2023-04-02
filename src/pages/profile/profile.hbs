@@ -1,0 +1,18 @@
+<main class="fullscreen">
+  <div class="profile fullscreen__container fullscreen__container_size_wide">
+    <form class="profile__form">
+      <input name="avatar" type="file" id="input-avatar" accept="image/*" />
+      {{#each fields}}
+      <div class="profile__field">
+        <label for="input-{{ name }}">{{ label }}</label>
+        <input id="input-{{ name }}" type="{{ type }}" name="{{ name }}" value="{{ defaultValue }}" disabled />
+      </div>
+      {{/each}}
+    </form>
+    <div class="profile__buttons">
+      {{#each buttons}}
+      {{> button}}
+      {{/each}}
+    </div>
+  </div>
+</main>

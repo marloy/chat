@@ -4,7 +4,7 @@ export const ERRORS = {
     description: 'Не туда попали',
     link: {
       label: 'Назад к чатам',
-      linkTo: 'renderPage(\'signin\')'
+      linkTo: 'renderPage(\'home\')'
     }
   },
   '500': {
@@ -12,7 +12,7 @@ export const ERRORS = {
     description: 'Мы уже фиксим',
     link: {
       label: 'Назад к чатам',
-      linkTo: 'renderPage(\'signin\')'
+      linkTo: 'renderPage(\'home\')'
     }
   }
 }

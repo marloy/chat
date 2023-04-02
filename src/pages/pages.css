@@ -7,5 +7,9 @@
 
   &__container {
     width: 340px;
+
+    &_size_wide {
+      width: 510px;
+    }
   }
 }
