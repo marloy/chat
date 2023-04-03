@@ -4,13 +4,15 @@
   "description": "Учебный проект Чат",
   "scripts": {
     "start": "parcel -p 3000 ./static/index.html --open --no-cache",
-    "build": "parcel build static/index.html"
+    "build": "parcel build static/index.html",
+    "server": "node src/server.js",
+    "preserver": "npm run build"
   },
   "author": "Evgeny Novikov",
   "license": "ISC",
   "devDependencies": {
-    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
-    "autoprefixer": "^10.4.14",
+    "@anikin/parcel-transformer-handlebars-precompile": "1.0.1",
+    "express": "4.18.2",
     "parcel": "2.8.3",
     "postcss": "8.4.21",
     "postcss-nested": "6.0.1"
