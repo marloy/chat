@@ -10,4 +10,5 @@ Netlify: https://imaginative-beignet-68f46a.netlify.app/
 
 - `npm install` — установка стабильной версии,
 - `npm run start` — запуск проекта,
-- `npm run build` — сборка проекта
+- `npm run build` — сборка проекта,
+- `npm run server` — запуск сервера с раздачей статики,
