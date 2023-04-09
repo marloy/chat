@@ -1,5 +1,7 @@
+import { PageName } from "../types";
+
 export const ERRORS = {
-  '404': {
+  [PageName.NotFound]: {
     status: '404',
     description: 'Не туда попали',
     link: {
@@ -7,7 +9,7 @@ export const ERRORS = {
       linkTo: 'renderPage(\'home\')'
     }
   },
-  '500': {
+  [PageName.InternalServerError]: {
     status: '500',
     description: 'Мы уже фиксим',
     link: {

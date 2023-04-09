@@ -1,5 +1,7 @@
+import { PageName } from "../types";
+
 export const FORMS = {
-  signin: {
+  [PageName.Signin]: {
     title: 'Вход',
     form: {
       fields: [
@@ -27,7 +29,7 @@ export const FORMS = {
       linkTo: 'renderPage(\'home\')'
     },
   },
-  signup: {
+  [PageName.Signup]: {
     title: 'Регистрация',
     form: {
       fields: [

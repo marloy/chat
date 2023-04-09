@@ -2,14 +2,15 @@ import template from './error.hbs';
 import { ERRORS } from './constants';
 import '../pages.css';
 import './error.css';
+import { PageName } from '../types';
 
-const errorPageTemplate = (status = '404') => {
+type ErrorPageParams = PageName.InternalServerError | PageName.NotFound;
+
+const errorPageTemplate = (status: ErrorPageParams = PageName.NotFound) => {
   const errorStatus = status;
 
   return () => {
     const html = template({ ...ERRORS[errorStatus] });
-
-    console.log('hello', ERRORS[errorStatus])
 
     return html;
   }
